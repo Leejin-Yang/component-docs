@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunklayout_component_hp=self.webpackChunklayout_component_hp||[]).push([[841],{9319:o=>{o.exports=JSON.parse('{"title":"Layout","slug":"/category/layout","permalink":"/component-docs/docs/category/layout","navigation":{"next":{"title":"Flex","permalink":"/component-docs/docs/layout/flex"}}}')}}]);
