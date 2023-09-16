@@ -1,0 +1,45 @@
+---
+title: Flex
+---
+
+# Flex Component
+
+The `Flex` component is a utility component that you can use to control layout with CSS flexbox. It exposes properties to control the direction, wrapping behavior, alignment, and spacing of its children.
+
+## Props
+
+- **direction**: Controls the direction of the flex items. Equivalent to CSS `flex-direction`.
+- **wrap**: Controls whether the flex items are forced onto one line or can wrap onto multiple lines. Equivalent to CSS `flex-wrap`.
+- **justify**: Defines how space is distributed between and around content items along the main-axis of a flex container. Equivalent to CSS `justify-content`.
+- **alignContent**: Aligns a flex container's lines within when there is extra space in the cross-axis. Equivalent to CSS `align-content`.
+- **alignItems**: Defines how space is distributed between and around flex items along the cross-axis of their container. Equivalent to CSS `align-items`.
+- **gap**: Defines size of gap between grid rows & columns.
+- **width** / **height**: The width and height properties are used in many contexts by various other components.
+
+## Usage
+
+```jsx live
+<Flex direction='row' justify='space-between'>
+  <Flex.Item grow={1}>I grow</Flex.Item>
+  <Flex.Item>I don't</Flex.Item>
+</Flex>
+```
+
+# FlexItem Component
+
+The `FlexItem` component is used as a child of a parent `Flex`. It exposes properties for controlling order, growth, shrinkage, basis size and alignment.
+
+## Props
+
+- **order**: Controls the order in which this item appears amongst its siblings.
+- **grow** / **shrink** : Determines how much this item should grow or shrink relative to other flexible items in its parent container.
+- **basis** : Specifies an optimal size for an element’s main axis dimension (width or height).
+
+## Usage
+
+```jsx live
+<Flex direction='row' justify='space-between'>
+  <Flex.Item grow={1}>I grow</Flex.Item>
+  <Flex.Item>I don't</Flex.Item>
+</Flex>
+```
