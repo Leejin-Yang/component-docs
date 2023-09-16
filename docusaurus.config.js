@@ -1,24 +1,17 @@
 // @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
 
 const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Components HP',
+  title: 'HP Components',
   favicon: 'img/favicon.ico',
 
-  // Set the production url of your site here
   url: 'https://leejin-yang.github.io',
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/component-docs/',
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'Leejin-Yang', // Usually your GitHub org/user name.
-  projectName: 'component-docs', // Usually your repo name.
+  organizationName: 'Leejin-Yang',
+  projectName: 'component-docs',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -37,7 +30,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/docs/',
+          editUrl: 'https://github.com/Leejin-Yang/component-docs/tree/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -51,7 +44,7 @@ const config = {
     ({
       image: 'img/og-image.png',
       navbar: {
-        title: 'Components HP',
+        title: 'HP Components',
         logo: {
           alt: 'My Site Logo',
           src: 'img/penguin.png',
