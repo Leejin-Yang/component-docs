@@ -5021,10 +5021,10 @@ launch-editor@^2.6.0:
     picocolors "^1.0.0"
     shell-quote "^1.7.3"
 
-layout-component-hp@^0.1.5:
-  version "0.1.5"
-  resolved "https://registry.yarnpkg.com/layout-component-hp/-/layout-component-hp-0.1.5.tgz#a1ad8af11728339444516447ac4521b14a1c6731"
-  integrity sha512-BNvwcW24YspZ76elekilYcXumgf+/DtrkR12K5wiB0Pvl/6ExqI85Rf74jttwpKFs8FIU3kmAWgpds0el7qfAw==
+layout-component-hp@^0.3.7:
+  version "0.3.7"
+  resolved "https://registry.yarnpkg.com/layout-component-hp/-/layout-component-hp-0.3.7.tgz#0f8bfc58f619a195d7e50003cd35ad55e69e7c3e"
+  integrity sha512-c6IFXSa4lv1mfxIvUlkr6JX9/IfnD9TXePS1yRNAXN7t9VIA4YcrNFngxzLRvU+7DZ3wj5vBSicThySf9H+59w==
 
 leven@^3.1.0:
   version "3.1.0"

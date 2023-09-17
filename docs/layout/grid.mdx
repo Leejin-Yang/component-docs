@@ -1,0 +1,106 @@
+---
+title: Grid
+sidebar_position: 2
+---
+
+# Grid
+
+CSS Grid를 사용하여 자식 컴포넌트들을 격자 형태로 배열하는 레이아웃 컴포넌트입니다.
+
+```jsx static
+import { Grid } from 'layout-component-hp';
+```
+
+## Anatomy
+
+- **Grid**: CSS Grid 사용해 자식 요소의 레이아웃을 제어하는 부모 컨테이너입니다.
+- **Grid.Item**: `Grid` 컴포넌트의 자식 요소입니다.
+
+## Usage
+
+`Grid` 컴포넌트의 사용법은 다음과 같습니다.
+
+### Template columns
+
+`Grid` 컴포넌트에 열과 공백을 적용할 때 사용합니다.
+
+```jsx live
+<Grid row={2} columns={2} gap={4}>
+  <Grid.Item>
+    <DecorativeBox />
+  </Grid.Item>
+  <Grid.Item>
+    <DecorativeBox />
+  </Grid.Item>
+  <Grid.Item>
+    <DecorativeBox />
+  </Grid.Item>
+  <Grid.Item>
+    <DecorativeBox />
+  </Grid.Item>
+</Grid>
+```
+
+### Spanning columns
+
+`Grid.Item`이 균등하게 분배되지 않고, 특정 수의 열이나 행을 차지해야 할 때 사용합니다.
+
+```jsx live
+<Grid rows={2} columns={5} gap={4}>
+  <Grid.Item row={2} col={1}>
+    <DecorativeBox />
+  </Grid.Item>
+  <Grid.Item col={2}>
+    <DecorativeBox />
+  </Grid.Item>
+  <Grid.Item col={2}>
+    <DecorativeBox />
+  </Grid.Item>
+  <Grid.Item col={4}>
+    <DecorativeBox />
+  </Grid.Item>
+</Grid>
+```
+
+### Starting and ending lines
+
+`Grid.Item`이 어디서 시작하고 끝나는지 설정할 때 사용합니다.
+
+```jsx live
+<Grid columns={5} gap={4}>
+  <Grid.Item col={2}>
+    <DecorativeBox />
+  </Grid.Item>
+  <Grid.Item colStart={4} colEnd={6}>
+    <DecorativeBox />
+  </Grid.Item>
+</Grid>
+```
+
+### Template areas
+
+`Grid` 레이아웃 내에서 영역을 지정할 때 사용합니다. 영역에 이름을 부여해 사용할 수 있습니다.
+
+```jsx live
+<Grid
+  rows={3}
+  columns={3}
+  gap={4}
+  areas={`'header header header'
+    'sidebar content content'
+    'footer footer footer'`}
+>
+  <Grid.Item area='header'>
+    <DecorativeBox>Header</DecorativeBox>
+  </Grid.Item>
+  <Grid.Item area='sidebar'>
+    <DecorativeBox>Sidebar</DecorativeBox>
+  </Grid.Item>
+  <Grid.Item area='content'>
+    <DecorativeBox>Content</DecorativeBox>
+  </Grid.Item>
+  <Grid.Item area='footer'>
+    <DecorativeBox>Footer</DecorativeBox>
+  </Grid.Item>
+</Grid>
+```
