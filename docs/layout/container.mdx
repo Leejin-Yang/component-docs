@@ -16,7 +16,7 @@ import { Container } from 'layout-component-hp';
 `Container` 컴포넌트의 사용법은 다음과 같습니다.
 
 ```jsx live
-<Container minWidth={100} maxWidth={600} backgroundColor='#f0f0f0' padding={10}>
+<Container minWidth={100} maxWidth={600} padding={10} css={{ backgroundColor='#f0f0f0' }}>
   <div>This is a container.</div>
 </Container>
 ```
@@ -29,8 +29,8 @@ centerContent 속성을 사용하여 자식 요소를 수평 및 수직으로 �
 <Container
   minWidth={100}
   maxWidth={600}
-  backgroundColor='#f0f0f0'
   padding={10}
+  css={{ backgroundColor='#f0f0f0' }}
   centerContent
 >
   <div>This is a container.</div>
