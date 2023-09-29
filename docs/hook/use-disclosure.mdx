@@ -1,0 +1,29 @@
+---
+title: useDisclosure
+sidebar_position: 1
+---
+
+# useDisclosure
+
+모달, 드롭다운, 팝업 등의 열기/닫기 상태를 관리하는데 사용되는 hook 입니다.
+
+```jsx static
+import { useDisclosure } from 'layout-component-hp';
+```
+
+## Usage
+
+```jsx static
+const { isOpen, onOpen, onClose } = useDisclosure();
+
+return (
+  <>
+    <button type='button' onClick={onOpen}>
+      Open Drawer
+    </button>
+    <Drawer isOpen={isOpen} onClose={onClose}>
+      /** Drawer Content */
+    </Drawer>
+  </>
+);
+```
